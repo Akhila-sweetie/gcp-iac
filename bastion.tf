@@ -13,6 +13,7 @@ boot_disk {
   }
   metadata_startup_script = var.bastion_startup_script
   tags = var.bastion_tags
+  
 }
 
 resource "google_compute_firewall" "allow_ssh_bastion" {
